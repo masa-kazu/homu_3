@@ -1,0 +1,33 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1; classes = {}; objectVersion = 77;
+ objects = {
+  A1 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Homu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A2 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HomuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+  G1 = {isa = PBXFileSystemSynchronizedRootGroup; path = Homu; sourceTree = "<group>"; };
+  G2 = {isa = PBXFileSystemSynchronizedRootGroup; path = HomuTests; sourceTree = "<group>"; };
+  G3 = {isa = PBXGroup; children = (G1, G2, G4); sourceTree = "<group>"; };
+  G4 = {isa = PBXGroup; children = (A1, A2); name = Products; sourceTree = "<group>"; };
+  S1 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  F1 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  R1 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  S2 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  F2 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  R2 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  T1 = {isa = PBXNativeTarget; buildConfigurationList = C1; buildPhases = (S1,F1,R1); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (G1); name = Homu; productName = Homu; productReference = A1; productType = "com.apple.product-type.application"; };
+  T2 = {isa = PBXNativeTarget; buildConfigurationList = C2; buildPhases = (S2,F2,R2); buildRules = (); dependencies = (D1); fileSystemSynchronizedGroups = (G2); name = HomuTests; productName = HomuTests; productReference = A2; productType = "com.apple.product-type.bundle.unit-test"; };
+  P1 = {isa = PBXContainerItemProxy; containerPortal = PR; proxyType = 1; remoteGlobalIDString = T1; remoteInfo = Homu; };
+  D1 = {isa = PBXTargetDependency; target = T1; targetProxy = P1; };
+  PR = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 2700; TargetAttributes = {T1 = {CreatedOnToolsVersion = 27.0;}; T2 = {CreatedOnToolsVersion = 27.0; TestTargetID = T1;};};}; buildConfigurationList = C3; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; knownRegions = (en,Base); mainGroup = G3; productRefGroup = G4; projectDirPath = ""; projectRoot = ""; targets = (T1,T2); };
+  C1 = {isa = XCConfigurationList; buildConfigurations = (AD,AR); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  C2 = {isa = XCConfigurationList; buildConfigurations = (TD,TR); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  C3 = {isa = XCConfigurationList; buildConfigurations = (PD,PRL); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  AD = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "法務3級"; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = jp.homu.legal3; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1;}; name = Debug;};
+  AR = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "法務3級"; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = jp.homu.legal3; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = 1;}; name = Release;};
+  TD = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = jp.homu.legal3.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Homu";}; name = Debug;};
+  TR = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; PRODUCT_BUNDLE_IDENTIFIER = jp.homu.legal3.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Homu";}; name = Release;};
+  PD = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_OPTIMIZATION_LEVEL = 0; ONLY_ACTIVE_ARCH = YES; SDKROOT = iphoneos; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; SWIFT_OPTIMIZATION_LEVEL = "-Onone";}; name = Debug;};
+  PRL = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; GCC_C_LANGUAGE_STANDARD = gnu17; SDKROOT = iphoneos; SWIFT_OPTIMIZATION_LEVEL = "-O";}; name = Release;};
+ };
+ rootObject = PR;
+}
